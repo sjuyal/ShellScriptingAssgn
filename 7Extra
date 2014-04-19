@@ -1,0 +1,21 @@
+1) Find a way to run this everyday at 12:01 AM or 0001 hrs.
+
+	I will append an entry in crontab with following instruction
+	1 0 * * * bash 7.sh
+
+	This will run for 1st min of 00:00 hrs and every day of every month
+
+2) Find a way to run this every monday and generate a log for accesses made on
+sundays.
+
+	I will append an entry in crontab with following instruction
+	1 0 * * 1 bash 7.sh
+	
+	This will run for 1st min of 00:00 hrs and every monday of every month. But here if we 		dont want to generate log we can remove '>> AccessLog' from the file 7.sh
+
+	And for sunday accesslog will be generated as it is happening in the script
+	1 0 * * 0 bash 7.sh
+
+
+
+
